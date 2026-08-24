@@ -107,20 +107,8 @@ python _convert_pngs.py            # PDF -> 300 dpi PNG
 GPU figure scripts (`make_figs_paper.py` without `--cpu`, `make_recon_figure.py`,
 `_make_figs_recon.py`) require the corresponding checkpoints and a CUDA device.
 
-## 7. Current results (fastMRI knee single-coil, 4×, magnitude PSNR / SSIM)
 
-| Method | PSNR (dB) | SSIM |
-|---|---|---|
-| Zero-filling | 25.42 | 0.5405 |
-| CascadeNet (K=4, trained) | 27.78 | 0.6226 |
-| True QB-DEQ end-to-end (step6) | 18.76 | — |
-| QB-DEQ v2 | in progress | in progress |
-
-The QB-DEQ v2 line is the subject of ongoing work; the paper reports the mechanism
-verification (theorems A–E), the implicit-gradient consistency tests, and the honest
-negative result of the first end-to-end formulation.
-
-## 8. Notes
+## 7. Notes
 
 - The first end-to-end QB-DEQ formulation (`step6`) is a deliberately reported **negative
   result**: the contractive-operator constraint and the quality of the fixed point were
