@@ -1,0 +1,12 @@
+# Core training/evaluation stack (Python >= 3.9, CUDA recommended)
+torch>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+scikit-image>=0.21
+
+# Raw fastMRI data preparation (.h5)
+h5py>=3.9
+
+# PDF -> PNG conversion (only used by _convert_pngs.py)
+PyMuPDF>=1.23

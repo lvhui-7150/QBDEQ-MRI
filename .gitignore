@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data / prepared tensors (several GB)
+*.pt
+*.h5
+
+# Generated reports and logs
+*.json
+*_summary.txt
+*.log
+
+# Training outputs
+runs/
+
+# Generated figures
+step3_figs/
+step4_figs/
+*.pdf
+*.png
